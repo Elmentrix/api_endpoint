@@ -15,3 +15,7 @@ def key_log_read():
     # sheet = file.get_worksheet(0)
     # sheet_data = sheet.get_all_values()
     return file
+
+
+# data = key_log_read()
+# print(data)
