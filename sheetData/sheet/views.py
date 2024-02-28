@@ -1,9 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .api import key
+from .key import key_log_read
 
 # Create your views here.
 def home(request):
-    return HttpResponse("Hello")
+    return HttpResponse(key_log_read)
 
-print(key.key_log_read())
+print(key_log_read())
