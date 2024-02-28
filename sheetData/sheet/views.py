@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from ..api import key
+from .api import key
 
 # Create your views here.
 def home(request):

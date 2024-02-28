@@ -8,7 +8,7 @@ def key_log_read():
         'https://www.googleapis.com/auth/drive'
     ]
 
-    creds = ServiceAccountCredentials.from_json_keyfile_name("C:\\Users\\Administrator\\Desktop\\service\\sheetData\\api\\sheet_credentials.json", scopes = scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_name("C:\\Users\\Administrator\\Desktop\\service\\sheetData\\sheet\\api\\sheet_credentials.json", scopes = scope)
     file = gspread.authorize(creds).open("Students").get_worksheet(0).get_all_values()
     # print(file)
     # workbook = file.open("Students")
